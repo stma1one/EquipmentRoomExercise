@@ -1,4 +1,4 @@
-okusing System;
+using System;
 
 // <summary>
 //Todo: צרו מחלקת חריגים המטפלת במקרים בהם אין מספיק מחשבים זמינים להשאלה.
@@ -38,7 +38,7 @@ class EquipmentRoom
 
 
         AvailableComputers -= amount;
-        Console.WriteLine($"הושאלו {amount} מחשבים בהצלחה.");
+        Console.WriteLine($"Borrowed successfully {amount} computers.");
     }
 }
 
@@ -58,11 +58,11 @@ class Program
 
 
         room.Borrow(4);
-        Console.WriteLine("ממשיכים בתוכנית...");
+        Console.WriteLine("continue on...");
         
             room.Borrow(8);
         
 
-        Console.WriteLine("מספר המחשבים הזמינים: " + room.AvailableComputers);
+        Console.WriteLine("availble computers " + room.AvailableComputers);
     }
 }
